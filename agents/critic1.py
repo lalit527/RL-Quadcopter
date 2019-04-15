@@ -28,12 +28,12 @@ class Critic:
         net_states = layers.Activation('relu')(net_states)
         net_states = layers.Dropout(0.5)(net_states)
         
-        net_states = layers.Dense(units=64)(net_states)
+        net_states = layers.Dense(units=32)(net_states)
         net_states = layers.BatchNormalization()(net_states)
         net_states = layers.Activation('relu')(net_states)
         net_states = layers.Dropout(0.5)(net_states)
         
-        net_states = layers.Dense(units=128)(net_states)
+        net_states = layers.Dense(units=32)(net_states)
         net_states = layers.BatchNormalization()(net_states)
         net_states = layers.Activation('relu')(net_states)
         net_states = layers.Dropout(0.5)(net_states)
@@ -43,12 +43,12 @@ class Critic:
         net_actions = layers.Activation('relu')(net_actions)
         net_actions = layers.Dropout(0.5)(net_actions)
         
-        net_actions = layers.Dense(units=64)(net_actions)
+        net_actions = layers.Dense(units=32)(net_actions)
         net_actions = layers.BatchNormalization()(net_actions)
         net_actions = layers.Activation('relu')(net_actions)
         net_actions = layers.Dropout(0.5)(net_actions)
         
-        net_actions = layers.Dense(units=128)(net_actions)
+        net_actions = layers.Dense(units=32)(net_actions)
         net_actions = layers.BatchNormalization()(net_actions)
         net_actions = layers.Activation('relu')(net_actions)
         net_actions = layers.Dropout(0.5)(net_actions)
